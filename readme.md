@@ -24,3 +24,7 @@ Você pode conferir mais detalhes no repositório oficial: [Link do Repositório
 
    3.2 Acesse o terminal do container PHP, substituindo `<container-api-php>` pelo ID obtido:  
    `docker exec -it <container-api-php> /bin/bash`
+
+4. Apos isso iria precisar fazer um `composer install` mas como o Framework Utilizado ultilizado **não possui nenhuma dependências pois o mesmo ainda esta sendo desenvolvido onde deve que ser atualizado recente mente para conseguir se ultilizado nesse projeto**
+   
+      `Nota: Certifique-se de que o framework foi atualizado recentemente para garantir compatibilidade com o projeto.`
