@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Hefestos\Core\Controller;
 
-class ExemploController extends Controller
+class DespesaController extends Controller
 {
     public function index()
     {
