@@ -18,3 +18,16 @@ services:
       - "8000:80"
     depends_on:
       - php
+  
+  db:
+    container_name: pi_mysql
+    image: mysql
+    volumes:
+      - .docker/db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - 3306:3306

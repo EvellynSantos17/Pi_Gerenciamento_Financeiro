@@ -2,7 +2,7 @@
 
 use Hefestos\Database\Tabela;
 
-return 'CREATE TABLE Usuario (
+return 'CREATE TABLE usuario (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
