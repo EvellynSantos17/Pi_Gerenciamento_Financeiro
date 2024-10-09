@@ -25,9 +25,16 @@ services:
     volumes:
       - .docker/db_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${DB_DATABASE}
-      MYSQL_USER: ${DB_USERNAME}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: GerenciamentoFinanceiro
     ports:
-      - 3306:3306
+      - "3307:3306"
+
+  phpmyadmin-api-GerenciamentoFinanceiro:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "9900:80"
