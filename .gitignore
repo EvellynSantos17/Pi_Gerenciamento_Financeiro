@@ -1,4 +1,1 @@
-.docker/db_data/ca-key.pem
-.docker/db_data/client-key.pem
-.docker/db_data/private_key.pem
-.docker/db_data/server-key.pem
+.docker/db_data
